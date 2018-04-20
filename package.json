@@ -1,0 +1,18 @@
+{
+  "name": "electron-my",
+  "version": "1.0.0",
+  "description": "a simple application",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "packager": "electron-packager ./ myself --all --out ./OutApp --electron-version=1.8.4 --overwrite"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^4.0.0",
+    "request": "^2.85.0",
+    "tar": "^4.4.1"
+  }
+}
