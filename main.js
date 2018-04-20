@@ -3,6 +3,7 @@ let win;
 let fs = require('fs-extra');  // 用于扩展内置 fs 方法
 let request = require('request');  // 用于发起下载请求
 let tar = require('tar');  // 用于执行 tar 解压缩
+require("./electron-json-storage.js")
 let windowConfig = {
     width:800,
     height:600
@@ -17,9 +18,9 @@ function createWindow(){
         //回收BrowserWindow对象
         win = null;
     });
-    win.on('resize',() => {
-        win.reload();
-    })
+//  win.on('resize',() => {
+//      win.reload();
+//  })
 }
 
 app.on('ready',createWindow);

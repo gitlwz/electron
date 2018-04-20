@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "electron-json-storage": "^4.1.0",
     "fs-extra": "^4.0.0",
     "request": "^2.85.0",
     "tar": "^4.4.1"
